@@ -1,12 +1,87 @@
-# React + Vite
+# 🌸 Collaborative Scheduler & Assistant  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple but cute **day-wise collaborative scheduler and task assistant**.  
+It helps two people (or teams) organize their daily routines, track to-dos, and manage time slots — all stored with a lightweight backend.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features  
 
-## Expanding the ESLint configuration
+- 📅 **Day-wise scheduling** — Create, view, and edit schedules per date  
+- 🔄 **Default slots** — Reset button loads morning/evening routines automatically  
+- ✅ **Task tracking** — Add, check, and store todos for each day  
+- 🤝 **Collaborative use** — Designed for two people with shared + individual slots  
+- 💾 **Persistent storage** — Data saved to JSON files in backend  
+- 🎨 **Cute UI** — Built with TailwindCSS & React  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🏗️ Project Structure  
+
+```
+project-root/
+│
+├── backend/               # Express backend
+│   ├── server.js          # API server (schedules & todos)
+│   └── data/              # JSON files saved here
+│
+├── src/                   # React frontend
+│   ├── components/        # UI Components
+│   │   ├── CuteSchedule.jsx
+│   │   ├── SlotList.jsx
+│   │   ├── SlotEditor.jsx
+│   │   └── TodoList.jsx
+│   ├── config.js          # Global API base URL
+│   └── index.css
+│
+├── package.json
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started  
+
+### 1. Clone the repository  
+```bash
+git clone <your-repo-url>
+cd project-root
+```
+
+### 2. Install dependencies  
+
+#### Frontend  
+```bash
+npm install
+```
+
+#### Backend  
+```bash
+cd backend
+npm install
+```
+
+---
+
+### 3. Run locally  
+
+#### Start backend  
+```bash
+cd backend
+node server.js
+```
+Backend runs at:  
+👉 `http://localhost:5000`
+
+#### Start frontend  
+```bash
+npm run dev
+```
+Frontend runs at:  
+👉 `http://localhost:5173`
+
+---
+
+## 📜 License  
+
+MIT License. Free to use and modify.  
